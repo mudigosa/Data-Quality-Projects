@@ -238,3 +238,14 @@ sm.delete_endpoint(EndpointName=current_endpoint_name)
 ```
 
 Don’t forget to shutdown resources by stopping running instances/apps following the instructions provided in this [documentation](https://docs.aws.amazon.com/sagemaker/latest/dg/notebooks-run-and-manage-shut-down.html) to avoid incurring charges from SageMaker.
+
+LAMBDA DEPLOYMENT
+we need to create lambda functions capables of:
+
+    Training the model
+    Awaiting for training
+    Deploying the model
+    Awaiting for deploy
+    Predict, save predictions and delete the endpoint
+
+
